@@ -1,0 +1,25 @@
+[INFO ] 09:22:41.982 com.project.OpenApiApplication - Starting OpenApiApplication using Java 17.0.5 with PID 23416 (C:\Users\user\Desktop\Open-API\eclipse\eclipse-workspace\open-api\bin\main started by user in C:\Users\user\Desktop\Open-API\eclipse\eclipse-workspace\open-api)
+[INFO ] 09:22:41.982 com.project.OpenApiApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 09:22:42.040 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[INFO ] 09:22:42.041 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 0 ms. Found 0 JDBC repository interfaces.
+[INFO ] 09:22:42.074 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 09:22:42.083 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 09:22:42.083 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 09:22:42.083 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.1]
+[INFO ] 09:22:42.092 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 09:22:42.092 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 109 ms
+[INFO ] 09:22:42.146 com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+[INFO ] 09:22:42.153 com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@234fa03a
+[INFO ] 09:22:42.154 com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+[INFO ] 09:22:42.165 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 09:22:42.169 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 09:22:42.171 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 09:22:42.174 com.project.OpenApiApplication - Started OpenApiApplication in 0.205 seconds (process running for 201.114)
+[INFO ] 09:22:42.175 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 09:22:48.586 o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 09:22:48.618 o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8000"]
+[INFO ] 09:22:48.618 o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 09:22:48.619 o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8000"]
+[INFO ] 09:22:48.620 o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8000"]
+[INFO ] 09:22:48.620 com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+[INFO ] 09:22:48.622 com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
