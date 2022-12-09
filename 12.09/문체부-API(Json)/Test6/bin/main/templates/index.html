@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Open-API(Json)</title>
+</head>
+<body>
+<h2>Input serviceKey you want to see</h2>
+<h3>Example: ...</h3>
+<form method="POST" action="/api">
+    <input type="text" name="serviceKey" th:value="${serviceKey}"/>
+    <input type="submit" value="CLick"/>
+</form>
+</body>
+</html>
