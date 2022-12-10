@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/default_layout}">
+    
+    <th:block layout:fragment="head">
+    	<title>Spring Boot</title>
+		
+        <!--/* 이 영역에 공통으로 사용할 css, js library를 선언한다. */-->
+        <link th:href="@{/css/common.css}" rel="stylesheet" />
+    </th:block>
+    <body>
+        <th:block layout:fragment="header" th:include="@{/fragments/header}"></th:block>
+		
+        <div layout:fragment="content" class="content">
+            <h2>This is Content</h2>
+            <hr>
+            <!-- 아래의 코드를 추가 합니다.-->
+            <table border="1">
+                <tr>
+                    <th>META_TITLE</th>
+                    <th>META_SUBJECTS</th>
+                    <th>META_DESCRIPTION</th>
+                    <th>META_PUBLISHER</th>
+                    <th>META_CONTRIBUTORS</th>
+                    <th>META_DATE</th>
+                    <th>META_LANGUAGE</th>
+                    <th>META_IDNTIFIER</th>
+                    <th>META_FORMAT</th>
+                </tr>
+                <th:block th:each="policy : ${policyList}">
+                    <tr>
+                        <td th:text="${ policy.title }"></td>
+                        <td th:text="${ policy.subjects }"></td>
+                        <td th:text="${ policy.description }"></td>
+                        <td th:text="${ policy.publisher }"></td>
+                        <td th:text="${ policy.contributors }"></td>
+                        <td th:text="${ policy.date }"></td>
+                        <td th:text="${ policy.language }"></td>
+                        <td th:text="${ policy.identifier }"></td>
+                        <td th:text="${ policy.format }"></td>
+                    </tr>
+                </th:block>
+            </table>
+            
+        </div>
+        <th:block layout:fragment="footer" th:include="@{/fragments/footer}"></th:block>	
+    </body>
+</html>
