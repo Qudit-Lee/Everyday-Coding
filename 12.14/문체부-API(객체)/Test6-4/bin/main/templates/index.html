@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href="style.css">
+<head>
+<meta charset="UTF-8">
+<title>Open-API</title>
+
+</head>
+
+<body>
+<div class="header">
+<nav class="navbar">
+        <div class="navbar_logo">
+            <img class="logo" src="/image/logo.png" >
+            <a class="navname" href="">WE are ONe</a>
+        </div>
+       </nav>
+</div>
+<div class = "input_form">
+<h3>Mapping API(JAVA)</h3>
+
+<form method="POST" action="/api">
+	<div>
+    <select name="category" id="category" th:value="${category}" > 
+    <option th:selected="${category}=='현행법령'">현행법령</option>
+    <option th:selected="${category}=='행정규칙'">행정규칙</option>
+    <option th:selected="${category}=='전문자료'">전문자료</option>
+    </select>
+    </div>
+    <div class="input_content">
+    Service Key를 입력하십시오&nbsp&nbsp&nbsp&nbsp<input type="text" name="serviceKey" th:value="${serviceKey}"/>
+    </div>
+    <div class="input_content">
+    원하는 페이지를 입력하십시오 <input type="text" name="page" th:value="${page}"/>
+    </div>
+    <input class="input_submit" type="submit" value="API 이동"/>
+</form>
+</div>
+</body>
+</html>
