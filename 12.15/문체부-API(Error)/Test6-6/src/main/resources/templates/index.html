@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href="style.css">
+<head>
+<meta charset="UTF-8">
+<title>Open-API</title>
+
+</head>
+
+<body>
+<div class="header">
+<nav class="navbar">
+        <div class="navbar_logo">
+            <img class="logo" src="/image/logo.png" >
+            <a class="navname" href="">WE are ONe</a>
+        </div>
+       </nav>
+</div>
+<div class = "input_form">
+<h3>Mapping API(JAVA)</h3>
+
+<form method="GET" action="/api">
+    <div class="input_content">
+    원하는 데이터를 입력하십시오&nbsp<input type="text" name="category" th:value="${category}"/>
+    </div>
+    <div class="input_content">
+    Service Key를 입력하십시오&nbsp&nbsp&nbsp&nbsp<input type="text" name="serviceKey" th:value="${serviceKey}"/>
+    </div>
+    <div class="input_content">
+    원하는 페이지를 입력하십시오 <input type="number" name="page" th:value="${page}"/>
+    </div>
+    <input class="input_submit" type="submit" value="API 이동"/>
+</form>
+<p th:text="${error_name}"></p>
+<p th:text="${error_code}"></p>
+<p th:text="${error_reason}"></p>
+<p th:text="${error_key}"></p>
+<p th:text="${error_page}"></p>
+<p th:text="${error_column}"></p>
+<p th:text="${error_pagenum}"></p>
+
+</div>
+</body>
+</html>
